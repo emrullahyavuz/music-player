@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicPlayerContainer {
+  width: 400px;
+  background: rgb(49, 129, 145);
+  background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);    
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+
+.musicPlayerContent {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.musicImageDiv {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 250px;
+  border: 3px solid rgb(49, 129, 145);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicImageDiv img {
+  
+  height: 80%;
+  
+}
+
+.musicTitleDiv {
+  text-align: center;
+  margin: 20px 0;
+
+}
+
+.progressBars {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.progressBar1 {
+  width: 0%;
+  background-color: black;
+  height: 6px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  
+  
+}
+.progressBar2 {
+  width: 100%;
+  background-color: #fff;
+  height: 6px;
+  border-radius: 10px;
+  position: absolute;
+  
+}
+
+.musicTimeDiv {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.currentTime,
+.totalTime {
+  font-weight: bold;
+
+}
+
+
+.musicControlDiv {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.musicControlDiv i {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 0.7;
+}
+
+.musicControlDiv i:hover {
+  color: goldenrod;
+  opacity: 1;
+  
+}
